@@ -1,0 +1,200 @@
+<style>
+#tabPanelPDU {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+#tabPanelPDU .panel-group {
+    width: 75%;
+    margin: 0 auto 0
+}
+
+#tabPanelPDU .panel-default>.panel-heading {
+    border: 0;
+    border-bottom: 1px #888 dotted;
+    background-color: transparent !important
+}
+
+#tabPanelPDU .panel-default {
+    border: 0
+}
+
+#tabPanelPDU .panel-title {
+    font-weight: bold;
+    background-color: #f4f4f4c0;
+
+}
+</style>
+<div id="tabPanelPDU" class="tabpanel">
+    <div class="tab-content text-left" id="capsulas-tab-content">
+        <div role="tabpanel" class="tab-pane active" id="capsulas-dh-Pu">
+            <div class="panel-group text-justify" id="tabPanelPDU" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#tabPanelPDU" href="#collapsePDU2024" aria-expanded="false" aria-controls="collapsePDU2024" class="collapsed">
+                                2024
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapsePDU2024" class="panel-collapse collapse" role="tabpanel">
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th tabindex="0"><strong>Tipo de perito</strong>
+                                            </th>
+                                            <th tabindex="0"><strong>N&uacute;mero de especialestas propuestos</strong>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td tabindex="0">Peritas
+                                                ritos adscritos a la UPJ</td>
+                                            <td tabindex="0"> 1,238 </td>
+                
+                                        </tr>
+                                        <tr>
+                                            <td tabindex="0">Peritas y peritos de la Lista</td>
+                                            <td tabindex="0">291</td>
+                                        </tr>
+                                        <tr>
+                                            <td tabindex="0"><strong>Total</strong></td>
+                                            <td tabindex="0"> 1,529 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-center">
+                                <img src="img/grafica_pastel.png" alt="Graf2" style="max-width: 35%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#tabPanelPDU" href="#collapsePDU2023" aria-expanded="false" aria-controls="collapsePDU2023" class="collapsed">
+                                2023
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapsePDU2023" class="panel-collapse collapse" role="tabpanel">
+                        <div class="panel-body">
+                            <div id="cont-98">
+                                <p>2,175 propuestas de designación, de las cuales:</p>
+                                <ul>
+                                    <li>
+                                        478 periciales en ciencias forenses
+                                    </li>
+                                    <li>
+                                        1,168 periciales en medicina del trabajo y
+                                    </li>
+                                    <li>
+                                        529 materias diversas
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-center">
+                                <img src="img/grafica_designacion.png" alt="Graf1" style="max-width: 50%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$('#collapseCapsulas1').on('shown.bs.collapse', function() {
+    /* var offsetTop = parseInt($(this).parent().parent().offset().top);
+
+     offsetTop = (offsetTop - 600);
+     if (offsetTop < 0)
+         offsetTop = offsetTop * -1;
+
+     alert(offsetTop);
+
+     $('html, body').stop().animate({
+         scrollTop: offsetTop - Math.exp(3)
+     }, 'smooth');*/
+})
+</script>
+<!-- <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingDos">
+        <h3 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-AIDEF" href="#Estdcont23"
+                aria-expanded="false" aria-controls="Estdcont23">
+                <strong>Propuestas de designaci&oacute;n de la Unidad de Peritos Judiciales</strong>
+            </a>
+        </h3>
+    </div>
+    <div id="Estdcont23" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
+        <div class="panel-body table-responsive" style="padding: 20px;">
+            <div id="cont-98">
+                <p>2,175 propuestas de designación, de las cuales:</p>
+                <ul>
+                    <li>
+                        478 periciales en ciencias forenses
+                    </li>
+                    <li>
+                        1,168 periciales en medicina del trabajo y
+                    </li>
+                    <li>
+                        529 materias diversas
+                    </li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <img src="img/grafica_designacion.png" alt="Graf1" style="max-width: 50%;">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab">
+        <h3 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-AIDEF" href="#Estdcont24"
+                aria-expanded="false" aria-controls="Estdcont24">
+                <strong>2024</strong>(al 15 de mayo)
+            </a>
+        </h3>
+    </div>
+    <div id="Estdcont24" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
+        <div class="panel-body table-responsive" style="padding: 20px;">
+            <div class="table-responsive">
+                <table class="table table-striped"> width="100%"
+                    <thead>
+                        <tr>
+                            <th tabindex="0"><strong>Tipo de perito</strong>
+                            </th>
+                            <th tabindex="0"><strong>N&uacute;mero de especialestas propuestos</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td tabindex="0">Peritas
+                                ritos adscritos a la UPJ</td>
+                            <td tabindex="0"> 1,238 </td>
+
+                        </tr>
+                        <tr>
+                            <td tabindex="0">Peritas y peritos de la Lista</td>
+                            <td tabindex="0">291</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="0"><strong>Total</strong></td>
+                            <td tabindex="0"> 1,529 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center">
+                <img src="img/grafica_pastel.png" alt="Graf2" style="max-width: 50%;">
+            </div>
+        </div>
+    </div>
+</div> -->

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unidad-administrativa>
+    <direccion calle="Insurgentes Sur" num-ext="2417" num-int="pisos 9" colonia="Colonia San Ángel" del-mun="Alcaldía Álvaro Obregón" ent-fed="Ciudad de México" cp="01000" />
+    <contacto telefono="5554908000" red="#302" />
+    <area nombre="Oficina de la Secretaría Ejecutiva del Pleno">
+    <servidor-publico titulo="Magistrado" nombre="Juan Carlos Guzmán Rosas" cargo="Secretario Ejecutivo del Pleno">
+        <contacto extension="2050" correo="jcguzmanr@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciada" nombre="Nayeli Berenice Aguirre Morales" cargo="Secretaria Particular">
+        <contacto extension="1070" correo="jcguzmanr@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="" nombre="Ana Luisa Juárez Zapata" cargo="Coordinadora de Salas de Pleno y Comisiones">
+        <contacto extension="1011" correo="aljuarez@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="" nombre="Ingrid Ramírez Vargas" cargo="Coordinadora de la Oficina del Secretario Ejecutivo">
+        <contacto extension="1077" correo="iramirezv@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="" nombre="Viridiana Fernández Vázquez" cargo="Recepcionista de la Secretaría Ejecutiva del Pleno">
+        <contacto extension="1286" correo="vfernandez@cjf.gob.mx" />
+    </servidor-publico>
+    </area>
+    <area nombre="Secretaría Técnica de Sesiones del Pleno, Desahogo y Seguimiento de Acuerdos">
+    <servidor-publico titulo="Licenciada" nombre="Nancy Mónica Ortiz Trigueros" cargo="Secretaria Técnica">
+        <contacto extension="1082" correo="nmortiz@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciada" nombre="Elizabeth León Juárez" cargo="Control de Sesiones y Acuerdos del Pleno">
+        <contacto extension="1065" correo="eleonj@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciado" nombre="Marco Antonio Carreón Sánchez" cargo="Elaboración de Oficios de Instrucción y Seguimiento de Acuerdos del Pleno">
+        <contacto extension="1093" correo="macarreons@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciado" nombre="Ricardo Edmundo Pérez Solares" cargo="Control y distribución de oficios">
+        <contacto extension="1197" correo="reperez@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Ingeniero" nombre="Isaac Galicia Hernández" cargo="Atención Ejecutiva en materia de Tecnologías de la Información">
+        <contacto extension="1062" correo="igaliciah@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciado" nombre="José Rosalío Nova Ramírez" cargo="Oficialía de Partes de la Secretaría Ejecutiva del Pleno">
+        <contacto extension="1084" correo="jrnova@cjf.gob.mx" />
+    </servidor-publico>
+    </area>
+    <area nombre="Secretaría Técnica de Coordinación de Dictámenes del Pleno">
+    <servidor-publico titulo="Licenciado" nombre="Juan Edgar Mejia Martínez" cargo="Secretario Técnico">
+        <contacto extension="1952" correo="jemejia@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciado" nombre="Guillermo Antonio Hernández Contreras" cargo="Secretario Técnico">
+        <contacto extension="1050" correo="gahernandezc@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciada" nombre="Erandi Guadalupe del Rosario Carrasco Soulé López" cargo="Secretaria Técnica">
+        <contacto extension="1051" correo="egcarrasco@cjf.gob.mx " />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciada" nombre="Carmen Daniela Pérez Barrio" cargo="Coordinadora de Proyectos Estratégicos">
+        <contacto extension="1201" correo="cdperez@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciada" nombre="Diana Paz Yáñez" cargo="Coordinadora Especializada de Proyectos">
+        <contacto extension="1064" correo="dpazy@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciada" nombre="Andrea Santos Valdés" cargo="Técnica de Dictámenes">
+        <contacto extension="1196" correo="asantosv@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="" nombre="Claudia Estela Sorsia Vergara" cargo="Secretaria de Apoyo B">
+        <contacto extension="1194" correo="cesorsia@cjf.gob.mx" />
+    </servidor-publico>
+    </area>
+    <area nombre="Secretaría Técnica de Análisis en Materia de Transparencia">
+    <servidor-publico titulo="Licenciado" nombre="Jair Sandoval Jiménez" cargo="Secretario Técnico">
+        <contacto extension="1689" correo="jsandovalj@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciado" nombre="Arturo Valentín Hernández Hernández" cargo="Coordinador de Información y Análisis Jurídico del Pleno y Transparencia I">
+        <contacto extension="1052" correo="avhernandezh@cjf.gob.mx" />
+    </servidor-publico>
+    </area>
+    <area nombre="Secretaría Técnica de Licencias, Legalización de Firmas y Publicación de Acuerdos Generales">
+    <servidor-publico titulo="Licenciado" nombre="Rafael García Zamora" cargo="Secretario Técnico">
+        <contacto extension="1078" correo="rgarciaz@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciado" nombre="René Alberto Cruz Carrasco" cargo="Coordinador de apoyo">
+        <contacto extension="1067" correo="racruz@cjf.gob.mx" />
+    </servidor-publico>
+    </area>
+    <area nombre="Secretaría Técnica de Recursos de Revisión Administrativa, Certificaciones y Seguimiento de Engroses">
+    <servidor-publico titulo="Licenciado" nombre="Juan Carlos Rivera Medellín" cargo="Secretario Técnico">
+        <contacto extension="1060" correo="jcriveram@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciada" nombre="Berenice Asyadeth Pérez Alcántara" cargo="Coordinadora de Apoyo">
+        <contacto extension="1205" correo="baperez@cjf.gob.mx" />
+    </servidor-publico>
+    </area>
+    <area nombre="Compilación y Sistematización de Informes">
+    <servidor-publico titulo="Maestra" nombre="Jennifer Ivonne Álvarez Campi" cargo="Coordinación de Elaboración e Integración de Informes">
+        <contacto extension="1287" correo="ialvarezc@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="" nombre="Silvia Trinidad De la Torre Romo" cargo="Analista de Elaboración de Informes">
+        <contacto extension="1915" correo="stdelatorre@cjf.gob.mx" />
+    </servidor-publico>
+    </area>
+    <area nombre="Seguimiento Tecnológico y Administrativo">
+    <servidor-publico titulo="Licenciada" nombre="Patricia Rivera Hernández" cargo="Coordinadora Técnica de Archivo">
+        <contacto extension="1080" correo="privera@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Maestra" nombre="Alejandra Sánchez Gutiérrez" cargo="Analista Administrativo">
+        <contacto extension="1024" correo="asanchezgu@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciado" nombre="Héctor Mireles Tello" cargo="Control Digitalización de Expedientes">
+        <contacto extension="1075" correo="hmireles@cjf.gob.mx" />
+    </servidor-publico>
+    </area>
+    <area nombre="Oficialía de Partes y Certificación del Edificio Sede">
+    <servidor-publico titulo="Licenciado" nombre="Martín Ortega Pérez" cargo="Secretario de Apoyo B">
+        <contacto extension="1860" correo="mortegap@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciada" nombre="María Luisa Liceaga Zermeño" cargo="Integración de Información">
+        <contacto extension="1861" correo="mlliceaga@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciado" nombre="Salvador Cruz Salinas" cargo="Coordinador de Recepción">
+        <contacto extension="1861" correo="scruzs@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciada" nombre="Irene Santos González Hernández" cargo="Guardia Nocturna">
+        <contacto extension="1863" correo="isgonzalez@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="" nombre="Coyoltzin Pallares Gutiérrez" cargo="Coordinador de Revisión">
+        <contacto extension="1863" correo="cpallares@cjf.gob.mx" />
+    </servidor-publico>
+    <servidor-publico titulo="Licenciada" nombre="María Gabriela Andrade Meléndez" cargo="Captura de Información">
+        <contacto extension="1864" correo="mgandradem@cjf.gob.mx" />
+    </servidor-publico>
+    </area>
+</unidad-administrativa>

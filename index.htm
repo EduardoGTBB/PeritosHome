@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Unidad de Peritos | Consejo de la Judicatura Federal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Poder Judicial de la Federaci&oacute;n | Consejo de la Judicatura Federal" />
+    <meta name="keywords" content="cjf, consejo de la judicatura federal, consejo, cjf.gob.mx, judicatura federal" />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/unidadPeritos.css" />
+    <link rel="stylesheet" href="css/slider.css" media="screen" onload="if(media!='screen')media='screen'" />
+    <!-- </script> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="plugins/html5shiv/dist/html5shiv.js"></script>
+    <script type="text/javascript" src="plugins/respond/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="//www.cjf.gob.mx/cdn/js/jquery.min.js"></script>
+    <style>
+        #Inici,
+        #mision,
+        #antecedentes,
+        #atribuciones,
+        #inforelevante,
+        #servtramites,
+        #directorio {
+            min-height: 400px;
+        }
+
+        .carousel-inner {
+            min-height: 330px !important;
+        }
+
+        .grad {
+            background: linear-gradient(black, lightgray);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        .Ver-mas {
+            display: block;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+
+        .Ver-menos {
+            opacity: 0;
+            display: none;
+            transition: all 0.5s;
+        }
+
+        .wrappers {
+            /* width: 40vw; */
+            color: #000;
+            margin: auto;
+            /* max-height: 50vh; */
+            max-height: 100vh;
+        }
+
+        .blue {
+            color: #24135f;
+            /* 5b38d7 */
+        }
+
+        p,
+        #allServiciosTramites {
+            text-align: justify;
+        }
+
+        .sm-padding {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .mt-15 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .sertr>ul {
+            cursor: pointer;
+            color: white;
+            padding-top: 25px;
+            padding-right: 15%;
+        }
+
+        .iftr {
+            cursor: pointer;
+            padding-top: 3%;
+        }
+
+        .spanback {
+            cursor: pointer;
+        }
+
+        .panel-group .panel-heading .panel-title a.collapsed:after,
+        .panel-group .panel-heading a.panel-title.collapsed:after {
+            font-family: FontAwesome;
+            font-style: normal;
+            speak: none;
+            display: inline-block;
+            content: '\f105';
+            color: #5b38d7;
+        }
+
+        .panel-group .panel-heading .panel-title a:after,
+        .panel-group .panel-heading a.panel-title:after {
+            font-family: FontAwesome;
+            font-style: normal;
+            speak: none;
+            display: inline-block;
+            content: '\f107';
+            float: right;
+            font-size: 1.375em;
+            line-height: 18px;
+            width: 22px;
+            text-align: center;
+            color: #5b38d7;
+        }
+
+        .lin {
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .ultext {
+            display: block;
+            position: relative;
+            top: -25px;
+            left: 30px;
+            text-align: justify;
+            font-size: large;
+        }
+
+        #l2 {
+            float: left
+        }
+
+        #l2 li {
+            display: inline;
+        }
+
+        #l3 {
+            float: left
+        }
+
+        #l3 li {
+            display: inline;
+        }
+
+        .social-icons li {
+            font-size: 2em;
+            margin: 0 1rem;
+        }
+
+        .active>a {
+            border-bottom: 2px solid #5d3ad7;
+            color: #5d3ad7 !important;
+        }
+
+        .inverse {
+            /* background-color: white !important; */
+            border-color: rgb(0, 0, 0);
+            /* min-height: 70px; */
+        }
+
+        .backs {
+            background-color: #68686809;
+        }
+
+        hr.faded {
+            vertical-align: middle;
+            width: 15vw;
+            display: inline-block;
+            border: 1.6px dashed #5d3ad7;
+            opacity: .5;
+        }
+
+        .navbar-main li {
+            padding: 0px 0.5vw !important;
+        }
+
+        .super {
+            position: absolute;
+            opacity: 0.1;
+        }
+
+        .navbar-brand {
+            /*width: 20%;*/
+            max-width: 200px;
+            padding: 0px 5px;
+        }
+
+        .navbar-fixed-top {
+            border-width: 0 0 1px 0px;
+            border-color: #cd833f59;
+        }
+
+        .listMenu-Item>a {
+            min-height: 72px;
+        }
+
+        @media (max-width: 770px) {
+            #TextSmall {
+                /* visibility: visible; */
+                display: block;
+            }
+
+            #textOrigin {
+                /* visibility: hidden; */
+                display: none;
+            }
+
+            .listMenu-Item>a {
+                min-height: fit-content;
+            }
+
+            .navbar-collapse {
+                background-color: #a1a2a21c;
+            }
+
+            #ICinicio {
+                visibility: hidden;
+            }
+
+            #ICdirec {
+                visibility: hidden;
+            }
+
+            .navbar-main a {
+                text-align: left;
+            }
+
+        }
+
+        @media (min-width: 770px) and (max-width: 1100px) {
+            .carousel-control.right {
+                right: -70px;
+            }
+
+            .carousel-control.left {
+                left: -70px;
+            }
+        }
+
+        @media (min-width: 775px) and (max-width: 2560px) {
+            #TextSmall {
+                /* visibility: hidden; */
+                display: none;
+            }
+        }
+
+        @media (max-width:990px) {
+            .navbar-fixed-top .navbar-collapse {
+                max-height: 420px;
+            }
+        }
+
+        /*  @media (max-width: 992px) {
+            .navbar-brand {
+                --min-width: 200px;--
+            }
+
+            nav.navbar {}
+        } */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light navbar-fixed-top indmen" id="Name">
+        <div class="col-xs-12 col-md-3 col-lg-2 col-lg-offset-1 text-right">
+            <a class="navbar-brand" href="http://portalconsejo.cjf.gob.mx/index.html">
+                <img src="img/cjf_logo_web.svg" alt="Logo_CJF" style="width:  100%">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav nav navbar-main" id="navMe">
+                <li class="active listMenu-Item" style="min-width: 50px; text-align: left;">
+                    <a class="nav-link inverse" href="#Inici"><i class="fa fa-home" aria-hidden="true"
+                            style="font-size: 28px;"></i></a><!-- <span id="ICinicio"><strong>Inicio</strong></span> -->
+                </li>
+                <li class="listMenu-Item text-center">
+                    <a class="nav-link inverse" href="#mision"><strong>Misi&oacute;n<br />y Visi&oacute;n</strong></a>
+                </li>
+                <li class="listMenu-Item">
+                    <a class="nav-link inverse" href="#antecedentes"><strong>Antecedentes</strong></a>
+                </li>
+                <li class="listMenu-Item">
+                    <a class="nav-link inverse" href="#atribuciones"><strong>Atribuciones</strong></a>
+                </li>
+                <li class="listMenu-Item text-center">
+                    <a class="nav-link inverse" href="#inforelevante"><strong>Informacion<br />Relevante</strong> </a>
+                </li>
+                <li class="listMenu-Item text-center">
+                    <a class="nav-link inverse" href="#servtramites"><strong>Servicios<br /> y Tr&aacute;mites</strong>
+                    </a>
+                </li>
+                <li class="listMenu-Item">
+                    <a class="nav-link inverse" href="#"><strong>Normatividad</strong> </a>
+                </li>
+                <li class="listMenu-Item" style="min-width: 50px; text-align: right;">
+                    <a class="nav-link inverse" href="#directorio"><i class="fa fa-phone-square" aria-hidden="true"
+                            style="font-size: 28px;"></i>
+                    </a>
+                </li><!-- <span id="ICdirec"><strong>Directorio</strong> </span> -->
+            </ul>
+        </div>
+    </nav>
+    <div id="content">
+        <div class="col-md-12">
+            <section id="Inici" class="sm-padding">
+                <div class="conteiner mt-15">
+                    <div class="mt-15"
+                        style="width: 85%;margin: 0 auto; background-image: url('resources/img/Carrusel/Degradado.png'); background-repeat: no-repeat; background-size:cover;">
+                        <h4 class="sr-only">Contenido Inicial</h4>
+                        <div class="">
+                            <h2 class="title-divider blue" style="margin-bottom: 2em; font-size: 50px;"><strong>Unidad
+                                    de Peritos Judiciales</strong></h2>
+                            <div id="carousel-imagen" data-ride="carousel" class="carousel slide">
+                                <div id="carrouselImagen"></div>
+                                <script>
+                                    $('#carrouselImagen').load('include/sections/carrousel_img.htm');
+                                </script>
+                                <a href="#carousel-imagen" data-slide="prev" class="left carousel-control">
+                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a href="#carousel-imagen" data-slide="next" class="right carousel-control">
+                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+                                    <span class="sr-only">Siguiente</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center" style="padding:4vh 5vh 4vh 5vh;">
+                <hr class="faded" />&nbsp;<span class="blue"
+                    style="font-size: 16px; opacity: .7;margin:9px 0;position: static;">ooo</span>&nbsp;
+                <hr class="faded" />
+            </div>
+            <section id="mision" class="sm-padding backs">
+                <div class="conteiner mt-15">
+                    <div class="mt-15">
+                        <div class="" style="width: 85%;margin: 0 auto;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="blue" style="font-size: 50px;"><strong>Misi&oacute;n y
+                                            visi&oacute;n</strong></h2>
+                                    <br>
+                                    <p style="font-size:xx-large;"><strong>Misi&oacute;n</strong></p>
+                                    <p style="font-size:large;">
+                                        Somos el &aacute;rea t&eacute;cnica de naturaleza pericial, que brinda auxilio a
+                                        los Tribunales Laborales Federales del Poder Judicial de la
+                                        Federaci&oacute;n, a trav&eacute;s de la conformaci&oacute;n de un cuerpo
+                                        pericial para
+                                        la emisi&oacute;n de dict&aacute;menes; ejecutando la supervisi&oacute;n y
+                                        seguimiento
+                                        de este, as&iacute; como aquella encargada de la conformaci&oacute;n de la Lista
+                                        de personas que pueden fungir como peritos o peritas ante los
+                                        &oacute;rganos del Poder Judicial de la Federaci&oacute;n.
+                                    </p>
+                                    <br />
+                                    <p style="font-size:xx-large;"><strong>Visi&oacute;n</strong></p>
+                                    <p style="font-size: large;">
+                                        Ser reconocida como el &aacute;rea especializada en materia pericial, que
+                                        ejecuta sus procesos de forma efectiva, profesional, transparente e
+                                        imparcial; para brindar un servicio de excelencia a los Tribunales
+                                        Laborales Federales, con la finalidad de ser un auxiliar esencial
+                                        para el desahogo de la prueba pericial.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center" style="padding:4vh 5vh 4vh 5vh;">
+                <!-- <hr class="faded" />&nbsp;<span class="blue" style="font-size: 55px; opacity: .7;">&#8734;</span>&nbsp;<hr class="faded" /> -->
+                <hr class="faded" />&nbsp;<span class="blue"
+                    style="font-size: 16px; opacity: .7;margin:9px 0;position: static;">ooo</span>&nbsp;
+                <hr class="faded" />
+            </div>
+            <section id="antecedentes" class="sm-padding backs">
+                <div class="conteiner mt-15">
+                    <div class="mt-15">
+                        <div class="" style="width: 85%;margin: 0 auto;">
+                            <div class="row">
+                                <h2 class="blue" style="font-size: 50px;"><strong>Antecedentes</strong></h2>
+                                <p style="font-size: larger;">
+                                    La Unidad de Peritos Judiciales surge como una instancia especializada
+                                    en materia pericial, en el marco de la implementaci&oacute;n de la
+                                    reforma de justicia en materia laboral, por lo que sus antecedentes se
+                                    encuentran entrelazados con esta.
+                                    El 24 de febrero de 2017, se public&oacute; en el Diario Oficial de la
+                                    Federaci&oacute;n (D.O.F.) el “Decreto por el que se declaran reformadas
+                                    y adicionadas diversas disposiciones de los art&iacute;culos 107 y 123
+                                    de la Constituci&oacute;n Pol&iacute;tica de los Estados Unidos
+                                    Mexicanos, en materia de Justicia Laboral”, que dispuso, entre otros
+                                    supuestos, la creaci&oacute;n de tribunales laborales del Poder Judicial
+                                    de la Federaci&oacute;n para resolver las diferencias o conflictos entre
+                                    trabajadores y patrones a nivel federal.
+                                    El 01 de mayo de 2019, se public&oacute; en el D.O.F. el “Decreto por el
+                                    que se reforman, adicionan y derogan diversas disposiciones de la Ley
+                                    Federal del Trabajo, de la Ley Org&aacute;nica del Poder Judicial de la
+                                    Federaci&oacute;n, de la Ley Federal de la Defensor&iacute;a
+                                    P&uacute;blica, de la Ley del Instituto del Fondo Nacional de la
+                                    Vivienda para los Trabajadores y Negociaci&oacute;n Colectiva”, que
+                                    implic&oacute; dos modificaciones que dar&iacute;an pauta a la
+                                    creaci&oacute;n de la Unidad de Peritos Judiciales (Unidad, en lo
+                                    subsecuente), a saber:
+                                </p>
+                                <div style="padding: 30px;">
+                                    <ul
+                                        style="color:white; background-color: #4313b1; font-size:large; margin: 0 auto; line-height: 20px; padding: 25px 20px 25px 35px;">
+                                        <!-- padding-top: 15px; padding-bottom: 15px; -->
+                                        <li style="text-align:justify;">La adici&oacute;n de una Secci&oacute;n 4ª. Ter
+                                            denominada “De
+                                            la
+                                            Unidad de
+                                            Peritos
+                                            Judiciales”, al Cap&iacute;tulo II. &oacute;rganos auxiliares,
+                                            del
+                                            T&iacute;tulo
+                                            Sexto de
+                                            la ahora
+                                            abrogada Ley Org&aacute;nica del Poder Judicial de la
+                                            Federaci&oacute;n, indicando
+                                            que tal
+                                            unidad es un &aacute;rea t&eacute;cnica de naturaleza y
+                                            finalidad
+                                            exclusivamente
+                                            periciales,
+                                            cuyo objeto es el auxilio espec&iacute;fico a los tribunales en
+                                            materia
+                                            laboral en los casos
+                                            que lo determine la Ley.
+                                        </li>
+                                        <li style="margin-top: 25px; text-align:justify;">La reforma a los
+                                            art&iacute;culos 824 y 899-G de
+                                            la Ley Federal
+                                            del
+                                            Trabajo, en donde,
+                                            respectivamente, se establece que los tribunales
+                                            designar&aacute;n
+                                            un
+                                            perito oficial
+                                            cuando admita dicha prueba y, adem&aacute;s, se mandata al
+                                            Consejo
+                                            de la
+                                            Judicatura
+                                            Federal integrar un cuerpo de peritos m&eacute;dicos oficiales,
+                                            especializados en
+                                            medicina del trabajo y &aacute;reas afines que estar&aacute;n
+                                            adscritos al Poder
+                                            Judicial de la
+                                            Federaci&oacute;n.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p style="font-size: larger;">El 11 de marzo de 2021 se public&oacute; en el
+                                    D.O.F.
+                                    el “Decreto por el que se declara
+                                    reformadas y adicionadas diversas disposiciones de la
+                                    Constituci&oacute;n
+                                    Pol&iacute;tica de los
+                                    Estados Unidos Mexicanos, relativos al Poder Judicial de la
+                                    Federaci&oacute;n”,
+                                    en el cual se fij&oacute;
+                                    un plazo de 180 d&iacute;as para la aprobaci&oacute;n de la
+                                    legislaci&oacute;n
+                                    secundar&iacute;a que
+                                    se derivara del
+                                    mismo.
+                                    El 31 de mayo de 2021, se public&oacute; en el D.O.F. el “Acuerdo
+                                    General del
+                                    Pleno del
+                                    Consejo de la Judicatura Federal, que reforma y adiciona el similar que
+                                    reglamenta la
+                                    organizaci&oacute;n y funcionamiento del propio Consejo, relativo a la
+                                    creaci&oacute;n
+                                    de la Unidad de
+                                    Peritos Judiciales”, en el que se preve&iacute;an atribuciones para la
+                                    Unidad
+                                    relacionadas con la
+                                    celebraci&oacute;n de concursos para la selecci&oacute;n de peritos que
+                                    le ser&iacute;an
+                                    adscritos, as&iacute; como
+                                    para la designaci&oacute;n de personal que prestar&iacute;a auxilio
+                                    pericial,
+                                    es
+                                    decir, se enfocaba
+                                    &uacute;nicamente al auxilio pericial que la Unidad prestar&iacute;a a
+                                    los
+                                    &oacute;rganos
+                                    jurisdiccionales en
+                                    materia laboral federal.
+                                    El 07 de junio de 2021, se public&oacute; en el D.O.F. una nueva Ley
+                                    Org&aacute;nica
+                                    del Poder
+                                    Judicial de la Federaci&oacute;n (LOPJF, en lo subsecuente) que
+                                    abrog&oacute; la Ley
+                                    Org&aacute;nica del
+                                    Poder Judicial de la Federaci&oacute;n, publicada en el D.O.F. el 26 de
+                                    mayo de
+                                    1995. En
+                                    relaci&oacute;n con la Unidad de Peritos Judiciales, replic&oacute; las
+                                    disposiciones
+                                    del ordenamiento
+                                    anterior.
+                                    El 11 de agosto de 2021, mediante el oficio SEPLE./GEN./001/2825/2021 se
+                                    inform&oacute; que
+                                    en sesi&oacute;n ordinaria de esa misma fecha el Pleno aprob&oacute; lo
+                                    siguiente:
+                                </p>
+                                <div style="padding: 30px;">
+                                    <ul
+                                        style="color:white; background-color: #4313b1; font-size:large; margin: 0 auto; line-height: 20px; padding: 25px 30px 25px 45px;">
+                                        <!-- padding-top: 15px; padding-bottom: 15px; -->
+                                        <li style="text-align: justify;">“Acuerdo General del Pleno del Consejo de la
+                                            Judicatura Federal, que
+                                            reforma, adiciona y deroga diversas disposiciones en materia pericial”, en
+                                            vigor el d&iacute;a de su aprobaci&oacute;n, publicado en el D.O.F. el 10 de
+                                            septiembre de
+                                            2021, el cual, entre otras modificaciones contempl&oacute; otorgar a la
+                                            Unidad las atribuciones
+                                            relativas a la integraci&oacute;n de la lista de las personas que pueden
+                                            fungir
+                                            como peritos ante los &oacute;rganos del Poder Judicial de la
+                                            Federaci&oacute;n,
+                                            considerando que le eran propias a su responsabilidad en materia pericial.
+                                        </li>
+                                        <li style=" margin-top: 25px; text-align: justify;">“Acuerdo General del Pleno
+                                            del Consejo de la
+                                            Judicatura Federal, que
+                                            regula la
+                                            selecci&oacute;n, integraci&oacute;n y evaluaci&oacute;n del
+                                            personal especializado de la
+                                            Unidad de
+                                            Peritos Judiciales; y la emisi&oacute;n de dict&aacute;menes
+                                            periciales
+                                            relacionados con la
+                                            materia laboral en auxilio espec&iacute;fico de los Tribunales
+                                            Laborales
+                                            Federales”, el
+                                            cual entr&oacute; en vigor el d&iacute;a de su publicaci&oacute;n en
+                                            el
+                                            D.O.F., el 20 de
+                                            septiembre de
+                                            2021.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center" style="padding:4vh 5vh 4vh 5vh;">
+                <hr class="faded" />&nbsp;<span class="blue"
+                    style="font-size: 16px; opacity: .7;margin:9px 0;position: static;">ooo</span>&nbsp;
+                <hr class="faded" />
+            </div>
+            <section id="atribuciones" class="sm-padding " style="background-color:#d4cbf5;">
+                <div class=" conteiner mt-15">
+                    <div class="mt-15">
+                        <div class="" style="width: 85%;margin: 0 auto;">
+                            <div class="row">
+                                <h2 class="blue" style="font-size: 50px;"><strong>Atribuciones</strong></h2>
+                                <p style="font-size: large;">El Acuerdo General del Pleno del Consejo de la
+                                    Judicatura Federal, que reglamenta la
+                                    organizaci&oacute;n y funcionamiento del propio Consejo, respecto de la
+                                    Unidad
+                                    de
+                                    Peritos
+                                    Judiciales establece las siguientes atribuciones:</p>
+                                <div class="panel-group margin-top-lg" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default" style="box-shadow: none; margin-bottom: 5px;">
+                                        <div class="panel-heading" style="border-color: transparent;">
+                                            <strong>Art&iacute;culo 98 Nonies</strong>.<br />
+                                            <p>
+                                                La Unidad de Peritos Judiciales es un &aacute;rea t&eacute;cnica
+                                                especializada en
+                                                materia pericial.
+                                                Su objeto es el auxilio a los &oacute;rganos jurisdiccionales en
+                                                materia
+                                                laboral federal en los casos en que determine
+                                                la Ley y le sea solicitado por los mismos. <br />
+                                                La persona titular de la Unidad de Peritos Judiciales
+                                                ser&aacute;
+                                                propuesta
+                                                por la Presidencia y designada por el Pleno.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingDos">
+                                            <h3 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse"
+                                                    data-parent="#accordion-AIDEF" href="#collapseDos"
+                                                    aria-expanded="false" aria-controls="collapseDos">
+                                                    <strong>Art&iacute;culo 98 Decies.</strong>
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseDos" class="panel-collapse collapse" role="tabpanel"
+                                            aria-expanded="false">
+                                            <div class="panel-body table-responsive" style="padding: 20px;">
+                                                <div id="cont-98"></div>
+                                                <script>
+                                                    $('#cont-98').load('paginas/Articulo98.htm');
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default" style="box-shadow: none; margin-bottom: 5px;">
+                                        <div class="panel-heading" style="border-color: transparent;">
+                                            <strong> Art&iacute;culo 98 Undecies</strong>.<br />
+                                            <p>De conformidad con lo dispuesto en el
+                                                art&iacute;culo
+                                                103 de la Ley, para ser perito o
+                                                perita de la Unidad de Peritos Judiciales se requiere poseer la
+                                                ciudadan&iacute;a mexicana, gozar de buena
+                                                reputaci&oacute;n, as&iacute; como conocer la ciencia, arte u
+                                                oficio
+                                                sobre
+                                                el que
+                                                vaya a versar el peritaje y acreditar su
+                                                pericia mediante examen que presentar&aacute; ante un jurado que
+                                                designe el
+                                                Consejo, con la cooperaci&oacute;n de
+                                                instituciones p&uacute;blicas o privadas que a juicio del propio
+                                                Consejo
+                                                cuenten con la capacidad para ello. La
+                                                decisi&oacute;n del jurado ser&aacute; irrecurrible.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center" style="padding:4vh 5vh 4vh 5vh;">
+                <hr class="faded" />&nbsp;<span class="blue"
+                    style="font-size: 16px; opacity: .7;margin:9px 0;position: static;">ooo</span>&nbsp;
+                <hr class="faded" />
+            </div>
+            <section id="inforelevante" class="sm-padding backs">
+                <!-- style="padding-top:40px;" -->
+                <div class="conteiner mt-15">
+                    <div class="mt-15">
+                        <!-- style="padding-bottom:50px;" -->
+                        <div class="" style="width: 85%; margin: 0 auto;">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h2 class="blue" style="font-size: 50px;">
+                                        <strong>Informaci&oacute;n <br />Relevante</strong>
+                                    </h2>
+                                </div>
+                                <div class="col-md-8 iftr" id="l2">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" id="inf1">
+                                        <span data-InfoR="Etdcs" data-back="inf1">
+                                            <i class="fa fa-check-circle-o" aria-hidden="true"
+                                                style="font-size: xx-large; color: #5b38d7;"></i>
+                                            <span class="ultext">Estad&iacute;sticas</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" id="inf2">
+                                        <span data-InfoR="Conven" data-back="inf2">
+                                            <i class="fa fa-check-circle-o" aria-hidden="true"
+                                                style="font-size: xx-large; color: #5b38d7;"></i>
+                                            <span class="ultext">Convenios</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" id="inf3">
+                                        <span data-InfoR="Regcion" data-back="inf3">
+                                            <i class="fa fa-check-circle-o" aria-hidden="true"
+                                                style="font-size: xx-large; color: #5b38d7;"></i>
+                                            <span class="ultext">Regionalizaci&oacute;n</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" id="inf4">
+                                        <span data-InfoR="AlianzaEstra" data-back="inf4">
+                                            <i class="fa fa-check-circle-o" aria-hidden="true"
+                                                style="font-size: xx-large; color: #5b38d7;"></i>
+                                            <span class="ultext"> Alianzas estrat&eacute;gicas</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ContInfoRv" class="row"></div>
+                            <script>
+                                $('#ContInfoRv').load('include/sections/informacionRelevante.htm', function () {
+                                    //$('#allServiciosTramites > div').addClass('hidden');
+                                    $('#l2 div span').click(function (ev) {
+                                        $('#allInforele').children().addClass('hidden');
+                                        $('#ContInfoRv' + ' #' + $(this).attr('data-InfoR')).removeClass('hidden');
+                                        $('#l2').children().addClass('hidden');
+                                        $('#l2' + ' #' + $(this).attr('data-back')).removeClass('hidden');
+                                    })
+                                    $('#ContInfoRv span').click(function (evnt) {
+                                        $('#allInforele').children().addClass('hidden');
+                                        $('#l2 div').removeClass('hidden');
+                                    })
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center" style="padding:4vh 5vh 4vh 5vh;">
+                <hr class="faded" />&nbsp;<span class="blue"
+                    style="font-size: 16px; opacity: .7;margin:9px 0;position: static;">ooo</span>&nbsp;
+                <hr class="faded" />
+            </div>
+            <section id="servtramites" class="sm-padding backs">
+                <div class="conteiner mt-15">
+                    <div class="mt-15">
+                        <div class="" style="width: 85%;margin: 0 auto;">
+                            <div class="row">
+                                <div class="col-md-6" style="background-color: #4313b1;">
+                                    <h2 id="TextSmall" style="font-size: 50px; color: white;"><strong>Servicios y
+                                            tr&aacute;mites</strong></h2>
+                                    <p style="color: white; font-size: large; padding: 4%;">
+                                        La Unidad de Peritos Judiciales es un &aacute;rea t&eacute;cnica de
+                                        naturaleza y finalidad exclusivamente pericial, de conformidad con el
+                                        art&iacute;culo 101 de la Ley Org&aacute;nica del Poder Judicial de la
+                                        Federaci&oacute;n. <br />
+                                        Entre sus principales funciones se encuentran las siguientes:
+                                    </p>
+                                    <div class="row sertr">
+                                        <ul id="ul-serviciosTramites" class="list spaced">
+                                            <!-- AQUÍ DEBE HABER UN LI -->
+                                            <!--  <div class="hidden" id="backr" style="padding-bottom: 15px;">
+                                                <span class="spanback" data-Gback="backr">
+                                                    <i class="fa fa-chevron-circle-left" aria-hidden="true" style="font-size: 30px; color: white;"></i>
+                                                </span>
+                                            </div> -->
+                                            <li class="list lin retrn hidden" id="backr" style="padding-bottom: 15px;">
+                                                <span class="spanback returns" data-Gback="backr">
+                                                    <i class="fa fa-chevron-circle-left" aria-hidden="true"
+                                                        style="font-size: 30px; color: white;"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list lin" id="tramit1">
+                                                <span data-ServTramites="propuestaDesigna" data-back="tramit1"
+                                                    data-Gback="backr" class="noAssign-dataServTramites">
+                                                    <i class="fa fa-check-circle-o" aria-hidden="true"
+                                                        style="font-size: 2em;"></i>
+                                                    <span class="ultext">Propuesta de designaci&oacute;n de
+                                                        personas peritas en auxilio a los Tribunales Laborales
+                                                        Federales:</span>
+                                                </span>
+                                            </li>
+                                            <li class="list lin" id="tramit2">
+                                                <span data-ServTramites="serviciosAuxilioPericial" data-back="tramit2"
+                                                    data-Gback="backr" class="noAssign-dataServTramites">
+                                                    <i class="fa fa-check-circle-o" aria-hidden="true"
+                                                        style="font-size: 2em;"></i>
+                                                    <span class="ultext text-justify">Otros servicios relacionados
+                                                        con el
+                                                        auxilio pericial a los Tribunales Laborales
+                                                        Federales.</span>
+                                                </span>
+                                            </li>
+                                            <li class="list lin" id="tramit3">
+                                                <span data-ServTramites="auxilioOrganosSolicitantes" data-back="tramit3"
+                                                    data-Gback="backr" class="noAssign-dataServTramites">
+                                                    <i class="fa fa-check-circle-o" aria-hidden="true"
+                                                        style="font-size: 2em;"></i>
+                                                    <span class="ultext">Auxilio a los &oacute;rganos solicitantes
+                                                        para la b&uacute;squeda de peritas o peritos, cuando se
+                                                        trate de especialidades en las que no se encuentre alguien
+                                                        registrado en la Lista.</span>
+                                                </span>
+                                            </li>
+                                            <li class="list lin" id="tramit4">
+                                                <span data-ServTramites="procedimientoSelecPeritos" data-back="tramit4"
+                                                    data-Gback="backr" class="noAssign-dataServTramites">
+                                                    <i class="fa fa-check-circle-o" aria-hidden="true"
+                                                        style="font-size: 2em;"></i>
+                                                    <span class="ultext"> Procedimientos de selecci&oacute;n
+                                                        de las y los peritos que son adscritos a la Unidad de
+                                                        Peritos
+                                                        Judiciales.</span>
+                                                </span>
+                                            </li>
+                                            <li class="list lin" id="tramit5">
+                                                <span data-ServTramites="listaPersonasPeritos" data-back="tramit5"
+                                                    data-Gback="backr" class="noAssign-dataServTramites">
+                                                    <i class="fa fa-check-circle-o" aria-hidden="true"
+                                                        style="font-size: 2em;"></i>
+                                                    <span class="ultext">Integraci&oacute;n anual de la Lista de
+                                                        personas que pueden fungir como peritas o peritos ante los
+                                                        &oacute;rganos del Poder Judicial de la
+                                                        Federaci&oacute;n.</span>
+                                                </span>
+                                            </li>
+                                            <li class="list lin" id="tramit6">
+                                                <span data-ServTramites="mecaExclusivo" data-back="tramit6"
+                                                    data-Gback="backr" class="noAssign-dataServTramites">
+                                                    <i class="fa fa-check-circle-o" aria-hidden="true"
+                                                        style="font-size: 2em;"></i>
+                                                    <span class="ultext">Mecanismo de exclusi&oacute;n.</span>
+                                                </span>
+                                            </li>
+                                            <li class="list lin" id="tramit7">
+                                                <span data-ServTramites="honorariosPesos" data-back="tramit7"
+                                                    data-Gback="backr" class="noAssign-dataServTramites">
+                                                    <i class="fa fa-check-circle-o" aria-hidden="true"
+                                                        style="font-size: 2em;"></i>
+                                                    <span class="ultext">Honorarios mayores a cien mil pesos.</span>
+                                                </span>
+                                            </li>
+                                            <li class="list lin" id="tramit8">
+                                                <span data-ServTramites="arancelHonorariosGastos" data-back="tramit8"
+                                                    data-Gback="backr" class="noAssign-dataServTramites">
+                                                    <i class="fa fa-check-circle-o" aria-hidden="true"
+                                                        style="font-size: 2em;"></i>
+                                                    <span class="ultext"> Arancel para el c&aacute;lculo de
+                                                        honorarios
+                                                        y gastos de las personas que pueden fungir como peritas y
+                                                        peritos ante los &oacute;rganos del Poder Judicial de la
+                                                        Federaci&oacute;n.</span>
+                                                </span>
+                                            </li>
+                                            <li class="list lin" id="tramit9">
+                                                <span data-ServTramites="convenio" data-back="tramit9"
+                                                    data-Gback="backr" class="noAssign-dataServTramites">
+                                                    <i class="fa fa-check-circle-o" aria-hidden="true"
+                                                        style="font-size: 2em;"></i>
+                                                    <span class="ultext">Convenios.</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2 class="blue" id="textOrigin" style="font-size: 50px;"><strong>Servicios y
+                                            tr&aacute;mites</strong></h2>
+                                    <div id="Cont-servtramites"></div>
+                                    <script>
+                                        $('#Cont-servtramites').load('include/sections/serviciosTramites.htm', function () {
+                                            //$('#allServiciosTramites > div').addClass('hidden');
+                                            $('#ul-serviciosTramites li span.noAssign-dataServTramites').click(function (e) {
+                                                $('#allServiciosTramites').children().addClass('hidden');
+                                                $('#Cont-servtramites' + ' #' + $(this).attr('data-ServTramites')).removeClass('hidden');
+                                                $('#ul-serviciosTramites').children().addClass('hidden');
+                                                $('#ul-serviciosTramites' + ' #' + $(this).attr('data-back')).removeClass('hidden');
+                                                $('#ul-serviciosTramites' + ' #' + $(this).attr('data-Gback')).removeClass('hidden');
+
+                                                if (($(window).width()) < 2770) {
+                                                    /* console.log($(this).attr('data-ServTramites')); */
+                                                    $('html, body').animate({
+                                                        scrollTop: $('#' + $(this).attr('data-ServTramites')).offset().top - 45
+                                                    }, 'fadeout');
+                                                }
+
+                                            })
+                                            $('#allServiciosTramites span').click(function (ev) {
+                                                $('#allServiciosTramites').children().addClass('hidden');
+                                                $('#ul-serviciosTramites li').removeClass('hidden');
+                                                $('#ul-serviciosTramites' + ' #' + $(this).attr('data-Gback')).addClass('hidden');
+                                                $('html, body').animate({
+                                                    scrollTop: $('#' + $(this).attr('data-ST')).offset().top
+                                                }, 'fadeIn');
+                                            })
+
+                                            $('#ul-serviciosTramites li span.returns').click(function (evt) {
+                                                $('#allServiciosTramites').children().addClass('hidden');
+                                                $('#ul-serviciosTramites li').removeClass('hidden');
+                                                $('#ul-serviciosTramites li.retrn').addClass('hidden');
+                                            })
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center" style="padding:4vh 5vh 4vh 5vh;">
+                <hr class="faded" />&nbsp;<span class="blue"
+                    style="font-size: 16px; opacity: .7;margin:9px 0;position: static;">ooo</span>&nbsp;
+                <hr class="faded" />
+            </div>
+            <section id="directorio" class="sm-padding backs">
+                <div class="conteiner mt-15">
+                    <div class="mt-15">
+                        <div class="" style="width: 85%;margin: 0 auto;">
+                            <h2 class="blue" style="font-size: 50px;"><strong>Directorio</strong></h2>
+                            <div class="panel-group margin-top-lg" role="tablist" aria-multiselectable="true">
+                                <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab">
+                                            <h3 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                                    href="#collapseDirec1" aria-expanded="false"
+                                                    aria-controls="collapseDirec1">
+                                                    Unidad de Peritos Judiciales
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div id="collapseDirec1" class="panel-collapse collapse" role="tabpanel"
+                                        aria-expanded="false">
+                                        <div class="panel-body" style="padding: 5px">
+                                            <div id="Direc1-content" style="background-color:#efebfb ;"><span
+                                                    class="sr-only">Directorio titular</span>
+                                                <ul class="list" style="font-size: medium;">
+                                                    <li class="sublist">
+                                                        <span class="subtitle"><strong>Suleiman Meraz
+                                                                Ortiz</strong></span>
+                                                        <br> Titular <br>
+                                                        <span>
+                                                            <i class="fa fa-phone"></i>&nbsp;ext. 320 3500 &nbsp;
+                                                            <i class="fa fa-envelope"></i>&nbsp;<a
+                                                                href="mailto:smeraz@cjf.gob.mx">smeraz@cjf.gob.mx</a>&nbsp;
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab">
+                                            <h3 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                                    href="#collapseDirec2" aria-expanded="false"
+                                                    aria-controls="collapseDirec2">
+                                                    Secretar&iacute;a T&eacute;cnica de Log&iacute;stica de
+                                                    Selecci&oacute;n
+                                                    de Peritas/Peritos
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div id="collapseDirec2" class="panel-collapse collapse" role="tabpanel"
+                                        aria-expanded="false">
+                                        <div class="panel-body" style="padding: 5px">
+                                            <div id="Direc2-content" style="background-color:#efebfb ;"><span
+                                                    class="sr-only">Directorio Selección Peritos</span>
+                                                <ul class="list" style="font-size: medium;">
+                                                    <li class="sublist">
+                                                        <span class="subtitle"><strong>Alejandro Moreno Pedroza</strong>
+                                                        </span>
+                                                        <br>Secretario T&eacute;cnico<br>
+                                                        <span>
+                                                            <i class="fa fa-phone"></i>&nbsp;ext. 320 3513 &nbsp;
+                                                            <i class="fa fa-envelope"></i>&nbsp;<a
+                                                                href="mailto:amorenope@cjf.gob.mx">amorenope@cjf.gob.mx</a>&nbsp;
+                                                        </span>
+                                                    </li>
+                                                    <li class="sublist">
+                                                        <span class="subtitle"><strong> Steffano Rafaello López
+                                                                Cruz</strong></span>
+                                                        <br>Director De Área<br>
+                                                        <span>
+                                                            <i class="fa fa-phone"></i>&nbsp;ext. 303 3511 &nbsp;
+                                                            <i class="fa fa-envelope"></i>&nbsp;<a
+                                                                href="mailto:srlopezm@cjf.gob.mx">srlopezm@cjf.gob.mx</a>&nbsp;
+                                                        </span>
+                                                    </li>
+                                                    <li class="sublist">
+                                                        <span class="subtitle"><strong> Rebeca Garc&iacute;a
+                                                                Garc&iacute;a</strong></span>
+                                                        <br>Subdirectora De Área<br>
+                                                        <span>
+                                                            <i class="fa fa-phone"></i>&nbsp;ext. 320 3502 &nbsp;
+                                                            <i class="fa fa-envelope"></i>&nbsp;<a
+                                                                href="mailto:rgarciaga@cjf.gob.mx">rgarciaga@cjf.gob.mx</a>&nbsp;
+                                                        </span>
+                                                    </li>
+                                                    <li class="sublist">
+                                                        <span class="subtitle"><strong>Roberto Ivan Centeno
+                                                                Turrubiartes</strong></span>
+                                                        <br>Jefe De Departamento<br>
+                                                        <span>
+                                                            <i class="fa fa-phone"></i>&nbsp;ext. 303 3520 &nbsp;
+                                                            <i class="fa fa-envelope"></i>&nbsp;<a
+                                                                href="mailto:ricenteno@cjf.gob.mx">ricenteno@cjf.gob.mx</a>&nbsp;
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingPenAgu">
+                                            <h3 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion2"
+                                                    href="#collapseDirec3" aria-expanded="false"
+                                                    aria-controls="collapseDirec3">
+                                                    Secretar&iacute;a T&eacute;cnica de Coordinaci&oacute;n con
+                                                    Tribunales
+                                                    Laborales Federales
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div id="collapseDirec3" class="panel-collapse collapse" role="tabpanel"
+                                        aria-expanded="false">
+                                        <div class="panel-body" style="padding: 5px">
+                                            <div id="Direc3-content" style="background-color:#efebfb ;"><span
+                                                    class="sr-only">Directorio de
+                                                    Cooirdinación</span></div>
+                                            <script>
+                                                /* $('#Direc2-content').load('paginas/Direc-Ejem.htm'); */
+
+                                                $('#Direc3-content').load('include/DirectorioP.htm');
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                                                                <div class="panel panel-default">
+                                                                    <div class="panel-heading" role="tab">
+                                                                        <h3 class="panel-title">
+                                                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseDirec3" aria-expanded="false" aria-controls="collapseDirec3">
+                                                                                Secretar&iacute;a T&eacute;cnica de Sesiones del Pleno, Desahogo
+                                                                                y Seguimiento de Acuerdos
+                                                                            </a>
+                                                                        </h3>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="collapseDirec3" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
+                                                                    <div class="panel-body" style="padding: 5px">
+                                                                    </div>
+                                                                </div>
+                                                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+    <script>
+        $('#footer').load('include/footer.html');
+    </script>
+    <script src="//www.cjf.gob.mx/cdn/js/micrositios/tab-navigator.js"></script>
+    <script type="text/javascript" src="//www.cjf.gob.mx/cdn/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//www.cjf.gob.mx/cdn/js/micrositios/script.min.js"></script>
+    <script>
+        var idClick_href = null;
+        var bIsLastMenu = false;
+        let section = document.querySelectorAll('section');
+        let lists = document.querySelectorAll('.listMenu-Item');
+        //alert(lists.length);
+
+        $(document).ready(function () {
+
+            //("#navigation.wrapper").find($("#nav-menu a[href='#antecedentes']")).click();
+
+            lists.forEach((item) =>
+                item.addEventListener('click', function () {
+                    //activeLink(this);
+                    var _this = $(this);
+                    idClick_href = _this.find("a").attr("href")
+                    bIsLastMenu = $(this).index() == (lists.length - 1);
+                    //console.log();
+                    //console.log(_this.find($("a")));
+                }));
+
+        })
+
+        //jQuery("a[href='#antecedentes']")
+        $("#Name.indmen").find($("#navMe a[href^='#']")).on('click', function (e) {
+            e.preventDefault();
+            var href = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(href).offset().top
+            }, 'slow', function () {
+
+                if (target != null)
+                    activeLink(target);
+
+                if (($(window).width()) < 990 && $("#navMe:visible").length == 1) {
+
+                    $(".navbar-toggler:visible").click();
+                }
+
+            });
+        });
+        /* $("#navigation.wrapper").find($("#nav-menu a[href^='#']")).on('click', function(e) {
+                e.preventDefault();
+                var href = $(this).attr('href');
+            
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top
+                }, 'slow', function() {
+                    if (target != null)
+                        activeLink(target);
+                });
+            
+            }); */
+        //Fin
+
+        function activeLink(li) {
+            lists.forEach((item) => item.classList.remove('active'));
+            li.classList.add('active');
+        }
+
+        var target = null;
+
+        window.onscroll = () => {
+            section.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 5;
+
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                //console.log(top, offset, height);
+
+                //console.log((top - offset < 0 ? idClick_href : top - offset), id);
+
+                if (top >= offset && top < offset + height) {
+                    target = document.querySelector(`[href='#${id}']`).parentElement;
+                    activeLink(target);
+                } else {
+                    if (bIsLastMenu && top - offset < 0 && idClick_href.substring(1).toLowerCase() == id.toLowerCase()) {
+                        //sí ya llegó al final.
+                        target = document.querySelector(`[href='#${id}']`).parentElement;
+                    } else {
+                        target = null;
+                    }
+                    //activeLink(target);
+                }
+
+
+            })
+        };
+    </script>
+</body>
+
+</html>

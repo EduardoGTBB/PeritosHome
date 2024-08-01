@@ -1,0 +1,57 @@
+<project name="ant-svn-example" default="run" basedir=".">
+  <property file="svn.properties"/>
+
+  <target name="run">
+    <exec executable="svn">
+      <arg value="info"/>
+    </exec>
+  </target>
+
+  <target name="cleanup">
+    <exec executable="svn">
+      <arg value="cleanup"/>
+    </exec>
+  </target>
+
+  <target name="update">
+    <exec executable="svn">
+      <arg value="up"/>
+    </exec>
+  </target>
+
+  <target name="revert">
+    <exec executable="svn">
+      <arg value="revert"/>
+      <arg value="${svn_local_path}"/>
+      <arg value="-R"/>
+    </exec>
+  </target>
+
+  <target name="revert-force" depends="cleanup">
+    <exec executable="svn">
+      <arg value="revert"/>
+      <arg value="${svn_local_path}"/>
+      <arg value="-R"/>
+    </exec>
+  </target>
+
+  <target name="merge" depends="revert, update">
+    <exec executable="svn">
+      <arg value="merge"/>
+      <arg value="--ignore-ancestry"/>
+      <arg value="${svn_target_path}"/>
+      <arg value="${svn_source_path}"/>
+      <arg value="${svn_local_path}"/>
+    </exec>
+  </target>
+
+  <target name="merge-force" depends="cleanup, revert, update">
+    <exec executable="svn">
+      <arg value="merge"/>
+      <arg value="--ignore-ancestry"/>
+      <arg value="${svn_target_path}"/>
+      <arg value="${svn_source_path}"/>
+      <arg value="${svn_local_path}"/>
+    </exec>
+  </target>
+</project>
